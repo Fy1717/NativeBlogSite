@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    margin: 0 75px;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    background: url('https://image.shutterstock.com/image-photo/blue-stone-background-concrete-texture-260nw-713913328.jpg');
+}
+
+header h1 {
+    font-size: 3vw;
+}
+
+nav {
+    overflow: hidden;
+    background-color: dimgray;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: darkslategray;
+    color: black;
+}
+
+.leftsutun {
+    float: left;
+    width: 102%;
+}
+
+.rsm img {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 250px;
+}
+
+.altsutun {
+    float: left;
+    width: 23%;
+}
+
+.bolum {
+    padding: 15px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.altrow .altsutun .bolum img {
+    width: 100%;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+footer {
+    background-color: darkgray;
+    height: 150px;
+    font-size: 1vw;
+    position: relative;
+    margin-top: 20px;
+}
+
+footer h2 {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+}
+
+.iletisim {
+    background-color: white;
+    font-size: 1vw;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:950px) {
+    .rsm img {
+        float: left;
+        width: 50%;
+        padding: 5px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .altsutun {
+        float: left;
+        width: 48%;
+    }
+
+    header {
+        background: url('https://www.ziraatportfoy.com.tr/images/upload/82qRkolZ.jpg');
+        content: 'sadasfsdfsd';
+    }
+
+    header p:after {
+        content: '  -   ÖĞREN';
+    }
+}
+
+@media screen and (max-width:600px) {
+    .rsm img {
+        float: left;
+        width: 50%;
+        padding: 5px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .altsutun {
+        float: left;
+        width: 98%;
+    }
+
+    nav {
+        opacity: 0.5;
+    }
+
+    nav a {
+        float: none;
+        width: 100%;
+    }
+
+    header {
+        background: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
+    }
+
+    header p:after {
+        content: '  -   ÖĞRET';
+    }
+}
